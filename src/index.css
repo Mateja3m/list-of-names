@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: lightgray;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 90%;
+  margin: auto;
+  overflow: auto;
+  min-height: 300px;
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 10px;
+}
+
+.item {
+  position: relative;
+  font-size: 1.2rem;
+  padding: 10px;
+  background-color: white;
+  width: 40%;
+  margin: 10px auto;
+  border-radius: 7px;
+}
+
+.delete {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  color: red;
+}
+.btn {
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  margin: 10px auto;
+  width: 40%;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  background: red;
+}
+.btn:hover {
+  background-color: #ef233c;
+}
+.btn:active {
+  top: 2px;
+}
+
+.footer {
+  position: fixed;
+  left: 40%;
+  right: 40%;
+  text-align: center;
+
+  bottom: 10px;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .footer {
+    position: fixed;
+    left: 35%;
+    right: 35%;
+  }
+}
